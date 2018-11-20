@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Experiment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    
+    .container-fluid{margin:3%;}
+
+    .jumbotron p{font-size:1.2em;}
+    .nav{
+        position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+         <div class="col-sm-2">
+                        <ul class="nav nav-pills nav-stacked navbar-fixed-left">
+                        <li class="active"><a href="#">Introduction</a></li>
+                        <li><a href="#">BS Typography Tags</a></li>
+                        <li><a href="#">BS Tables</a></li>
+                        <li><a href="#">BS Images</a></li>
+                        <li><a href="#">BS Wells</a></li>
+                        <li><a href="#">BS Alerts</a></li>
+                        <li><a href="#">BS Buttons</a></li>
+                        <li><a href="#">Glyphicons</a></li>
+                        <li><a href="#">Badges, Labels, Progress Bars</a></li>
+                        
+
+
+                      </ul>  
+         </div>   
+         <div class="col-sm-10">
+        <div class="jumbotron">
+            <h1 class="text-center page-header">The Bootstrap Experiment</h1>
+            <p>I am a self-taught developer. I mostly depend on free and online resources to learn and my biggest tools are my projects. This is one of them, where I am testing my Bootstrap skills</p>
+            <p>I started building this page so that I could practice bootstrap after I became fluent with HTML, CSS and Responsive Web Design. This is the ongoing result!</p>
+            <p>I update it frequently as I learn, based on the principle that we learn better and faster by working on projects.</p>
+            <p><em>(By the way, this grey-coloured section has a class called <code>.jumbotron</code>. Not sure how I feel about it yet)</em></p>
+        </div>
+            <h2>Bootstrap Typography Tags</h2>
+                <p>The tag <mark>"mark"</mark> is used to highlight text.</p>
+                <p>The abbreviations (such as <abbr class="initialism">FFC</abbr>) are used with the tag "abbr" and the class<code>.initialism</code></p>
+                <p>The blockquote element is styled a different way, below. Also, the tag ".blockquote-reverse" class shows the quote on the right: <blockquote>I'm not afraid of storms, for I'm learning to sail my ship" Louisa May Alcott</blockquote></p>
+                <p><blockquote class="blockquote-reverse">I'm not afraid of storms, for I'm learning to sail my ship" Louisa May Alcott</blockquote></p>
+                <p><code>The "code" element is styled like this</code></p>
+                <p>And this <kbd>kbd</kbd> tag is how it will look if you need to write some <kbd>keyboard shortcut</kbd></p>
+                <p>Classes - Contextual Colors and Backgrounds</p>
+                <ul>
+                    <li class="text-muted">.text-muted</li>
+                    <li class="text-primary bg-primary">.text-primary and .bg-primary</li>
+                    <li class="text-success bg-success">.text-success and .bg-success</li>
+                    <li class="text-info bg-info">.text-info and .bg-warning</li>
+                    <li class="text-warning bg-warning ">.text-warning and .bg-warning</li>
+                    <li class="text-danger bg-danger">.text-danger and .bg-danger</li>
+                </ul>
+            
+            <h2>Bootstrap Tables</h2>
+                <p>A basic Bootstrap table has a light padding and only horizontal dividers. A <code>.table</code> adds basic styling to a table and <code>.table-striped</code> adds zebra-stripes to it.<code>.table-bordered</code> adds a border and <code>.table-hover</code> adds a hover effect to it. </p>
+                <p>The table below has all of the previous tags</p>
+                <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>This</th>
+                            <th>is my</th>
+                            <th>Header</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>And this</td>
+                            <td>my first</td>
+                            <td>row</td>
+                        </tr>
+                        <tr>
+                            <td>This is</td>
+                            <td>my</td>
+                            <td>second row</td>
+                        </tr>
+                        <tr>
+                            <td>And this</td>
+                            <td>at last</td>
+                            <td>is the end</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                <h3>Contextual classes</h3>
+                    <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are as follows: <code>.active</code> <code>success</code> <code>.info</code> <code>.warning</code> and <code>danger</code>. </p>
+                    <p>Aditionally: this table is also using the following classers:</p>
+                        <ul> <li><code>.table-condensed</code> class <em>(which means the table is more compact by cutting padding into half)</em></li>
+                        <li><code>.table-responsive</code> class <em>(which creates a responsive table - Only viewable in smaller than 768px screens)</em></li></ul>
+                    <div>
+                    <table class="table table-condensed">
+                            <thead>
+                            <tr>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Default</td>
+                                <td>Defaultson</td>
+                                <td>def@somemail.com</td>
+                            </tr>      
+                            <tr class="success">
+                                <td>Success</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>Danger</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                            </tr>
+                            <tr class="info">
+                                <td>Info</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>Warning</td>
+                                <td>Refs</td>
+                                <td>bo@example.com</td>
+                            </tr>
+                            <tr class="active">
+                                <td>Active</td>
+                                <td>Activeson</td>
+                                <td>act@example.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>    
+
+               
+         <h2>Bootstrap Images</h2>
+            <p>It's easy to make the images responsive with bootstrap. All the images below, even though the have different styles (with different classes, thay are all responsive through the sue of the <code>.img-responsive</code>.They will then scale nicely to the parent element. The .img-responsive class applies the following CSS properties: <code>display: block</code> <code>max-width: 100%</code> and <code>height: auto</code>. The captions use the class <code>.caption</code>.</p>
+            <div class="row text-center">
+                    <div class="col-sm-4 text-center">
+                        <img src="https://vignette.wikia.nocookie.net/justdance/images/f/fc/Beautiful-black-and-white-cat-grey-Favim.com-4088871.jpg/revision/latest?cb=20160821124713" class="img-responsive img-rounded" alt="Black Cat Black and White">
+                        <div class="caption">
+                                <p>This img uses the <code>.img-rounded</code> class</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/1/17/Black-and-white-wolf-19-background.jpg/revision/latest?cb=20161004055245" class="img-responsive img-circle" alt="Blck and white wolf">
+                        <div class="caption">
+                                <p>This img uses the <code>.img-circle</code> class</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5RSqO_aygr5N0uayAZi-1USLzbWxbfNnGk9rPCSHpNC3sfZ5F" class="img-responsive img-thumbnail" alt="black and white tiger">
+                        <div class="caption">
+                                <p>This img uses the <code>.img-thumbnail</code> class</p>
+                        </div>
+                </div>
+        
+    </div>
+    
+    <h2>Bootstrap Wells</h2>
+        <p>The <code>.well</code> class adds a rounded border around an element with a gray background color and some padding. By default, they are medium-sized, but you can change the size by writing different classes. You can see the application below.</p>
+        <div class="well">Basic Well <code>.well</code></div>
+        <div class="well well-sm">Small Well <code>.well</code> <code>.well-sm</code></div>
+        <div class="well well-lg">Large Well <code>.well</code> <code>.well-lg</code></div>  
+    
+    <h2>Bootstrap Alerts</h2>
+        <p>Bootstrap provides an easy way to create predefined alert messages. They each have their corresponding colors, just as the tables above, and can have manny effects, links, they can have an option to close, and can even incorporate animation.</p>
+        <p>This will work by incorporating several classes related to the type of alert you're looking for. Below we can find examples which incorporate the different alert types.</p>
+        <div class="alert alert-success">
+                <strong>Success!</strong> Indicates a successful or positive action. <code>.alert</code> <code>.alert-success</code>
+        </div>
+        <div class="alert alert-info alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Info!</strong> Indicates a neutral informative change or action. <code>.alert</code> <code>.alert-info</code>. You can click on the X symbol to close it. This uses <code>data-dismiss</code> <code>aria-label</code> inside a link. You can get more info <a href="https://www.w3schools.com/bootstrap/bootstrap_alerts.asp">here</a> 
+        </div>
+        <div class="alert alert-warning">
+                <strong>Warning!</strong> Indicates a warning that might need attention. <code>.alert</code> <code>.alert-warning</code> <a href="#" class="alert-link">This adds a link</a> using the <code>alert-link</code> class.
+        </div>
+        <div class="alert alert-danger alert-dismissible fade in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>    
+            <strong>Warning!</strong> Indicates a warning that might need attention. <code>.alert</code> <code>.alert-danger</code>. This is also a closable alert but this time with an animation. this uses the classes <code>alert-dismissible</code> and <code>fade in</code>.
+        </div>
+    <h2>Bootstrap Buttons</h2>
+        <h3>Button Styles</h3>
+            <p>Bootstrap provides different styles of buttons, which can be used on links, buttons or input objects. They can be:</p><ul><li>Different sizes</li>
+                <li>Block Level (or content-size)</li>
+                <li>Active/Disabled (or ontent-size)</li>
+                </ul> 
+            <div class="row text-center">
+                    <div class="col-sm-6"><button type="button" class="btn text-center">Basic</button></div>
+                    <div class="col-sm-6"><button type="button" class="btn btn-default text-center">Default</button></div>
+            </div>
+            <br>
+            <div class="row text-center">
+                    <div class="col-sm-2"><button type="button" class="btn btn-primary text-center">Primary</button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-success">Success</button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-info">Info</button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-warning">Warning</button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-danger">Danger</button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-link">Link</button></div>
+            </div>
+            <br>
+            <div class="row text-center">
+                    <div class="col-sm-3"><button type="button" class="btn btn-primary btn-lg">Large</button></div>
+                    <div class="col-sm-3"><button type="button" class="btn btn-primary btn-md">Medium</button></div>
+                    <div class="col-sm-3"><button type="button" class="btn btn-primary btn-sm">Small</button></div>
+                    <div class="col-sm-3"><button type="button" class="btn btn-primary btn-xs">XSmall</button></div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary btn-block">Block Level Button<br></button>
+            <br>
+            <div class="row text-center">
+                    <div class="col-sm-6"><button type="button" class="btn btn-primary active">Active Primary</button></div>
+                    <div class="col-sm-6"><button type="button" class="btn btn-primary disabled">Disabled Primary</button></div>
+                
+            </div>
+        <br>
+        <h3>Button Groups</h3>
+            <p>Bootstrap allows you to group a series of buttons together (on a single line) in a button group. You should use the <code>.btn-group</code> class on the div surrounding the buttons. The buttons can also be resized as a group, applying the <code>.btn-group-lg|sm|xs</code> classes appropriately</p>
+            <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Button1</button>
+                    <button type="button" class="btn btn-primary">Button2</button>
+                    <button type="button" class="btn btn-primary">Button3</button>
+                </div>
+            <p>Other classes which can be used in buttons groups are: .btn-group-vertical, to create a vertical button group; .btn-group-justified, to span your buttons the entire width of the screen; and you can also create dropdown menus with together or split buttons. The whole list is <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp">here</a> </p>
+            <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Button1</button>
+                    <button type="button" class="btn btn-primary">Button2</button>
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Button3 <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Option1</a></li>
+                        <li><a href="#">Option2</a></li>
+                    </ul>
+                    </div>
+                </div>
+    <h2>Glyphicons</h2>
+        <p>Bootstrap includes 260 glyphs from the Glyphicon Halflings set. Glyphicons Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, you should include a link back to Glyphicons whenever possible.</p>
+        <p>You can use glyphicons in text, buttons, toolbars, navigation, or forms. The whole list is <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp">here.</a></p>
+        
+            <div class="row text-center">
+                    <div class="col-sm-2"><button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-search"></span> Search
+                        </button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-pencil"></span> Write Me
+                        </button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-question-sign"></span> Ask Me
+                        </button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-plane"></span> Where am I
+                        </button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> I wanna buy it
+                        </button></div>
+                    <div class="col-sm-2"><button type="button" class="btn btn-info">
+                            <span class="glyphicon glyphicon-sunglasses"></span> The cool Glyphicon
+                        </button></div>
+            </div>
+    <h2>Bootstrap Badges, Labels and Progress Bars</h2>
+        <p><strong>Badges</strong> are numerical indicators of items associated with a links (Nr. of comments). You can use the <code>.badge</code> class within span elements.</p>
+        <p><strong>Labels</strong> are used to provide information about something (eg.: New article/Item).    Labels can also show contextual classes.</p>
+    
+    
+
+
+            <div class="row text-center">
+                    <div class="col-sm-4"><a href="#">News <span class="badge">5</span></a><br>
+                    </div>
+                    <div class="col-sm-4">
+                            <a href="#">Comments <span class="badge">10</span></a><br>
+                    </div>
+                    <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary">Primary <span class="badge">7</span></button>        </div>
+                </div>
+        <br>
+            <div class="row text-center">
+                <div class="col-sm-2"><span class="label label-default">Default Label</span>
+                </div>
+                <div class="col-sm-2">
+                        <span class="label label-primary">Primary Label</span>
+                </div>
+                <div class="col-sm-2"><span class="label label-success">Success Label</span></div>
+                <div class="col-sm-2"><span class="label label-info">Info Label</span></div>
+                <div class="col-sm-2"><span class="label label-warning">Warning Label</span></div>
+                <div class="col-sm-2"><span class="label label-danger">Danger Label</span></div>
+            </div><br>
+            <p><strong>Progress Bars</strong> can be used to show a user how far along he/she is in a process. It's as easy as using the <code>.progress</code> class with the div element.</p>
+            <p>They can come with percentage labels, text, can be colorful (using, also, the contextual classes, they can be stripped or have an animation on the fill. They can also be stacked (by placing multiple bars into the same div). The main class after the main div would be <code>.progress-bar</code> but other values should be changed. To mearn more about Progress Bars <a href="https://www.w3schools.com/bootstrap/bootstrap_progressbars.asp">here</a>.</p>
+            <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                      Progress Bar with Label - 70%
+                    </div>
+                  </div>            
+            <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                    aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                      40% Complete (success)
+                    </div>
+                  </div>
+                  
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                      50% Complete (info)
+                    </div>
+                  </div>
+                  
+                  <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                          60% Complete (warning)
+                        </div>
+                      </div>
+                      
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar"
+                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                          70% Complete (danger)
+                        </div>
+                      </div>
+                      <div class="progress">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar"
+                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                              40%
+                            </div>
+                          </div>
+                
+                          <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+                                  Free Space
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+                                  Warning
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+                                  Danger
+                                </div>
+                              </div>
+            
+
+        
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div> 
+</body>
+</html>
